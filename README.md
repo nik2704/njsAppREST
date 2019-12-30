@@ -11,3 +11,4 @@ Settings:
 * utils - utils JS (like settings for connection to mongoDB)
 * views - views settings HTMP/PUG/EJS
 * Savage Beast.postman_collection.json - Examples of API requests
+* ---
