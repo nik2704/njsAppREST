@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "f819e1db-3c40-4f22-b7c9-b0c9c4157ca7",
+		"name": "Savage Beast",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "My Server Title1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "What a great server1.",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "CI category example",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/cmdb",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cmdb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "wwwww",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "qqqqq",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/cmdb/5e09c73afd8c540994bf3252",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cmdb",
+						"5e09c73afd8c540994bf3252"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cmdb/5e09c73afd8c540994bf3252",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cmdb",
+						"5e09c73afd8c540994bf3252"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cmdb/5e09c73afd8c540994bf3252",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cmdb",
+						"5e09c73afd8c540994bf3252"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
